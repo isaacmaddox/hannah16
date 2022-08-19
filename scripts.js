@@ -167,7 +167,8 @@ function load() {
 }
 
 $(".images").on('mousewheel', function (event) {
-    console.log($(this));
+    if (!$("body").hasClass('finished'))
+        return;
     if (event.originalEvent.wheelDelta >= 0) {
         $("body, html").animate({
             scrollLeft: $("body").scrollLeft() - 100,
