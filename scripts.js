@@ -147,7 +147,7 @@ $("body, html").on('scroll', function () {
 
 function load() {
     $('.title').addClass('open');
-    $('.images').addClass('open');
+    $('.images').addClass('loaded');
     $('audio.primary')[0].play();
     setTimeout(() => {
         $(document).ready(function () {
@@ -158,7 +158,7 @@ function load() {
                 width: "100%",
             }, 201000, "linear");
         });
-    }, 1000);
+    }, 1500);
     setTimeout(() => {
         $("body").addClass('finished');
         $("audio.primary")[0].pause();
