@@ -136,7 +136,8 @@ video {
     cursor: pointer;
     position: absolute;
     bottom: 2.5vh;
-    left: 2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .title.open {
