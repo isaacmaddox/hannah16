@@ -173,7 +173,7 @@ video {
 .end {
     height: 100vh;
     display: block;
-    width: calc(100vw);
+    width: 100vw;
     transform: translateX(2.5vh) translateY(-2.5vh);
     padding: 2.5vh;
     background: #ffffff22;
@@ -205,4 +205,31 @@ video {
 .end::-webkit-scrollbar {
     display: block;
     width: 7px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    z-index: 100;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.loading p {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: .75;
 }

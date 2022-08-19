@@ -70,6 +70,10 @@ var images = [
 ]
 var inFrame = false;
 
+$(window).on('load', function () {
+    $(".loading").fadeOut(1000);
+});
+
 for (var i in images) {
     if (images[i].endsWith('.mp4') || images[i].endsWith('.mov')) {
         $(".images").append(`
