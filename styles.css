@@ -50,9 +50,13 @@ img {
     height: 100%;
     display: flex;
     gap: 2.5vh;
-    padding: 2.5vh;
+    padding: 0;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     z-index: 0;
+}
+
+.images.loaded {
+    padding: 2.5vh;
 }
 
 audio {
@@ -79,7 +83,7 @@ video {
 
 .title {
     position: relative;
-    height: calc(100% + 5vh);
+    height: 100%;
     width: 100vw;
     flex-shrink: 0;
     font-family: 'Poppins';
@@ -95,7 +99,6 @@ video {
     background: url("media/299466964_477651990454989_912910543471705516_n.jpg");
     background-size: cover;
     background-position: center top;
-    transform: translate(-2.5vh, -2.5vh);
     isolation: isolate;
 }
 
@@ -141,7 +144,6 @@ video {
 }
 
 .title.open {
-    transform: none;
     height: 100%;
     transition-delay: 0.5s;
     border-radius: 10px;
